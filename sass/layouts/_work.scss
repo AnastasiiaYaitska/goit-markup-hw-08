@@ -1,0 +1,35 @@
+
+
+.work {
+    display: flex;
+    gap: var(--indent);
+}
+
+.work__item {
+    position: relative;
+    flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+}
+
+.work__overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--second-overlay);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work__dscr {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--light-txt-color);
+}
+
+
+.section--not-paddng-top {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
