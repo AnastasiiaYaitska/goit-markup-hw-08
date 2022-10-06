@@ -1,48 +1,55 @@
 .header {
-    border-bottom: 1px solid var(--main-brd-color);
+	border-bottom: 1px solid var(--main-brd-color);
 }
 
-.main-container {
-    display: flex;
+.header__container {
+	display: flex;
+	// align-items: baseline;
 }
 
-.nav {
-    display: flex;
-    margin-right: auto;
+.header__nav {
+	display: flex;
+	margin-right: auto;
 }
 
-.header-nav {
-    display: flex;
-    gap: 50px;
+.pagination {
+	display: none;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		gap: 50px;
+	}
 }
 
-.nav-link {
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    transition: color var(--anim);
-
-&:hover,
-&:focus {
-    color: var(--accent-txt-color);
+.pagination__item {
+	position: relative;
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
+.pagination__link {
+	font-weight: 500;
+	letter-spacing: 0.02em;
 
-&.activ {
-    position: relative;
-    color: var(--accent-txt-color);
-}
+	transition: color var(--anim);
 
-&.activ::after {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-txt-color);
-}
+	&:hover,
+	&:focus {
+		color: var(--accent-txt-color);
+	}
+
+	&.activ {
+		color: var(--accent-txt-color);
+	}
+
+	&.activ::after {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		border-radius: 2px;
+		background-color: var(--accent-txt-color);
+	}
 }

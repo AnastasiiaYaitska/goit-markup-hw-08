@@ -1,4 +1,17 @@
 
+.section--not-paddng-top {
+    padding-top: 0;
+        padding-bottom: 94px;
+
+@media screen and (max-width:1199px) {
+    display: none;
+}
+@media screen and (min-width:1200px) {
+    display: block;
+    
+}
+}
+
 
 .work {
     display: flex;
@@ -28,8 +41,3 @@
     color: var(--light-txt-color);
 }
 
-
-.section--not-paddng-top {
-    padding-top: 0;
-    padding-bottom: 94px;
-}
