@@ -94,20 +94,31 @@
 							<div class="portfolio__cards">
 								<a href="" class="portfolio__link link">
 									<div class="portfolio__thumb">
-										<img
-											class="portfolio__img"
-											srcset="
-												./img/portfolio-cards/img_L-370.jpg 370w,
-												./img/portfolio-cards/img_m-354.jpg 354w,
-												./img/portfolio-cards/img_s-450.jpg 450w,
-												./img/portfolio-cards/img_m-708.jpg 708w,
-												./img/portfolio-cards/img_L-740.jpg 740w,
-												./img/portfolio-cards/img_s-900.jpg 900w
-											"
-											sizes="(min-width:1200px)  370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-											src="./img/portfolio-cards/img_s-450.jpg"
-											alt="Ноутбук з відкритою сторінкою сайта Технокряк."
-										/>
+										<picture>
+											<!-- desktop screen -->
+											<source
+												media="(min-width: 1200px)"
+												srcset="./img/portfolio-cards/img_L-370.jpg 1x, ./img/portfolio-cards/img_L-740.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- tablet screen -->
+											<source
+												media="(min-width: 768px)"
+												srcset="./img/portfolio-cards/img_m-354.jpg 1x, ./img/portfolio-cards/img_m-708.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- mobile screen -->
+											<source
+												media="(max-width: 767px)"
+												srcset="./img/portfolio-cards/img_s-450.jpg 1x, ./img/portfolio-cards/img_s-900.jpg 2x"
+												type="image/jpg"
+											/>
+											<img
+												class="portfolio__img"
+												src="./img/portfolio-cards/img_s-450.jpg "
+												alt="Ноутбук з відкритою сторінкою сайта Технокряк."
+											/>
+										</picture>
 										<div class="overlay">
 											<p class="overlay__desc">
 												Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -126,20 +137,31 @@
 							<div class="portfolio__cards">
 								<a href="" class="portfolio__link link">
 									<div class="portfolio__thumb">
-										<img
-											class="portfolio__img"
-											srcset="
-												./img/portfolio-cards/img_L-1-370.jpg 370w,
-												./img/portfolio-cards/img_m-1-354.jpg 354w,
-												./img/portfolio-cards/img_s-1-450.jpg 450w,
-												./img/portfolio-cards/img_m-1-708.jpg 708w,
-												./img/portfolio-cards/img_L-1-740.jpg 740w,
-												./img/portfolio-cards/img_s-1-900.jpg 900w
-											"
-											sizes="(min-width:1200px)  370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-											src="./img/portfolio-cards/img_s-1-450.jpg"
-											alt="Постер з двома волейболістами , які боряться за м’яч."
-										/>
+										<picture>
+											<!-- desktop screen -->
+											<source
+												media="(min-width: 1200px)"
+												srcset="./img/portfolio-cards/img_L-1-370.jpg 1x, ./img/portfolio-cards/img_L-1-740.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- tablet screen -->
+											<source
+												media="(min-width: 768px)"
+												srcset="./img/portfolio-cards/img_m-1-354.jpg 1x, ./img/portfolio-cards/img_m-1-708.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- mobile screen -->
+											<source
+												media="(max-width: 767px)"
+												srcset="./img/portfolio-cards/img_s-1-450.jpg 1x, ./img/portfolio-cards/img_s-1-900.jpg 2x"
+												type="image/jpg"
+											/>
+											<img
+												class="portfolio__img"
+												src="./img/portfolio-cards/img_s-1-450.jpg"
+												alt="Постер з двома волейболістами , які боряться за м’яч."
+											/>
+										</picture>
 										<div class="overlay">
 											<p class="overlay__desc">
 												Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -161,20 +183,32 @@
 							<div class="portfolio__cards">
 								<a href="" class="portfolio__link link">
 									<div class="portfolio__thumb">
-										<img
-											class="portfolio__img"
-											srcset="
-												./img/portfolio-cards/img_L-2-370.jpg 370w,
-												./img/portfolio-cards/img_m-2-354.jpg 354w,
-												./img/portfolio-cards/img_s-2-450.jpg 450w,
-												./img/portfolio-cards/img_m-2-708.jpg 708w,
-												./img/portfolio-cards/img_L-2-740.jpg 740w,
-												./img/portfolio-cards/img_s-2-900.jpg 900w
-											"
-											sizes="(min-width:1200px)  370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-											src="./img/portfolio-cards/img_s-2-450.jpg "
-											alt="Логотип ресторана Seafood з зображенням риби."
-										/>
+										<picture>
+											<!-- desktop screen -->
+											<source
+												media="(min-width: 1200px)"
+												srcset="./img/portfolio-cards/img_L-2-370.jpg 1x, ./img/portfolio-cards/img_L-2-740.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- tablet screen -->
+											<source
+												media="(min-width: 768px)"
+												srcset="./img/portfolio-cards/img_m-2-354.jpg 1x, ./img/portfolio-cards/img_m-2-708.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- mobile screen -->
+											<source
+												media="(max-width: 767px)"
+												srcset="./img/portfolio-cards/img_s-2-450.jpg 1x, ./img/portfolio-cards/img_s-2-900.jpg 2x"
+												type="image/jpg"
+											/>
+											<img
+												class="portfolio__img"
+												src="./img/portfolio-cards/img_s-2-450.jpg "
+												alt="Логотип ресторана Seafood з зображенням риби."
+											/>
+										</picture>
+
 										<div class="overlay">
 											<p class="overlay__desc">
 												Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -196,21 +230,31 @@
 							<div class="portfolio__cards">
 								<a href="" class="portfolio__link link">
 									<div class="portfolio__thumb">
-										<img
-											class="portfolio__img"
-											srcset="
-												./img/portfolio-cards/img_L-3-370.jpg 370w,
-												./img/portfolio-cards/img_m-3-354.jpg 354w,
-												./img/portfolio-cards/img_s-3-450.jpg 450w,
-												./img/portfolio-cards/img_m-3-708.jpg 708w,
-												./img/portfolio-cards/img_L-3-740.jpg 740w,
-												./img/portfolio-cards/img_s-3-900.jpg 900w
-											"
-											sizes="(min-width:1200px)  370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-											src="./img/portfolio-cards/img_s-3-450.jpg"
-											alt="Навушники чорного кольору. "
-										/>
-
+										<picture>
+											<!-- desktop screen -->
+											<source
+												media="(min-width: 1200px)"
+												srcset="./img/portfolio-cards/img_L-3-370.jpg 1x, ./img/portfolio-cards/img_L-3-740.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- tablet screen -->
+											<source
+												media="(min-width: 768px)"
+												srcset="./img/portfolio-cards/img_m-3-354.jpg 1x, ./img/portfolio-cards/img_m-3-708.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- mobile screen -->
+											<source
+												media="(max-width: 767px)"
+												srcset="./img/portfolio-cards/img_s-3-450.jpg 1x, ./img/portfolio-cards/img_s-3-900.jpg 2x"
+												type="image/jpg"
+											/>
+											<img
+												class="portfolio__img"
+												src="./img/portfolio-cards/img_s-3-450.jpg"
+												alt="Навушники чорного кольору. "
+											/>
+										</picture>
 										<div class="overlay">
 											<p class="overlay__desc">
 												Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -232,21 +276,31 @@
 							<div class="portfolio__cards">
 								<a href="" class="portfolio__link link">
 									<div class="portfolio__thumb">
-										<img
-											class="portfolio__img"
-											srcset="
-												./img/portfolio-cards/img_L-4-370.jpg 370w,
-												./img/portfolio-cards/img_m-4-354.jpg 354w,
-												./img/portfolio-cards/img_s-4-450.jpg 450w,
-												./img/portfolio-cards/img_m-4-708.jpg 708w,
-												./img/portfolio-cards/img_L-4-740.jpg 740w,
-												./img/portfolio-cards/img_s-4-900.jpg 900w
-											"
-											sizes="(min-width:1200px)  370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-											src="./img/portfolio-cards/img_s-4-450.jpg"
-											alt="Два бокси , великий білий і маленький коричневий."
-										/>
-
+										<picture>
+											<!-- desktop screen -->
+											<source
+												media="(min-width: 1200px)"
+												srcset="./img/portfolio-cards/img_L-4-370.jpg 1x, ./img/portfolio-cards/img_L-4-740.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- tablet screen -->
+											<source
+												media="(min-width: 768px)"
+												srcset="./img/portfolio-cards/img_m-4-354.jpg 1x, ./img/portfolio-cards/img_m-4-708.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- mobile screen -->
+											<source
+												media="(max-width: 767px)"
+												srcset="./img/portfolio-cards/img_s-4-450.jpg 1x, ./img/portfolio-cards/img_s-4-900.jpg 2x"
+												type="image/jpg"
+											/>
+											<img
+												class="portfolio__img"
+												src="./img/portfolio-cards/img_s-4-450.jpg"
+												alt="Два бокси , великий білий і маленький коричневий."
+											/>
+										</picture>
 										<div class="overlay">
 											<p class="overlay__desc">
 												Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -268,20 +322,31 @@
 							<div class="portfolio__cards">
 								<a href="" class="portfolio__ink link">
 									<div class="portfolio__thumb">
-										<img
-											class="portfolio__img"
-											srcset="
-												./img/portfolio-cards/img_L-5-370.jpg 370w,
-												./img/portfolio-cards/img_m-5-354.jpg 354w,
-												./img/portfolio-cards/img_s-5-450.jpg 450w,
-												./img/portfolio-cards/img_m-5-708.jpg 708w,
-												./img/portfolio-cards/img_L-5-740.jpg 740w,
-												./img/portfolio-cards/img_s-5-900.jpg 900w
-											"
-											sizes="(min-width:1200px)  370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-											src="./img/portfolio-cards/img_s-5-450.jpg"
-											alt="Манітор комп’ютера з відкритою сторінкою сайту Inspiration has no Borders. "
-										/>
+										<picture>
+											<!-- desktop screen -->
+											<source
+												media="(min-width: 1200px)"
+												srcset="./img/portfolio-cards/img_L-5-370.jpg 1x, ./img/portfolio-cards/img_L-5-740.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- tablet screen -->
+											<source
+												media="(min-width: 768px)"
+												srcset="./img/portfolio-cards/img_m-5-354.jpg 1x, ./img/portfolio-cards/img_m-5-708.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- mobile screen -->
+											<source
+												media="(max-width: 767px)"
+												srcset="./img/portfolio-cards/img_s-5-450.jpg 1x, ./img/portfolio-cards/img_s-5-900.jpg 2x"
+												type="image/jpg"
+											/>
+											<img
+												class="portfolio__img"
+												src="./img/portfolio-cards/img_s-5-450.jpg"
+												alt="Манітор комп’ютера з відкритою сторінкою сайту Inspiration has no Borders. "
+											/>
+										</picture>
 
 										<div class="overlay">
 											<p class="overlay__desc">
@@ -303,20 +368,31 @@
 							<div class="portfolio__cards">
 								<a href="" class="portfolio__ink link">
 									<div class="portfolio__thumb">
-										<img
-											class="portfolio__img"
-											srcset="
-												./img/portfolio-cards/img_L-6-370.jpg 370w,
-												./img/portfolio-cards/img_m-6-354.jpg 354w,
-												./img/portfolio-cards/img_s-6-450.jpg 450w,
-												./img/portfolio-cards/img_m-6-708.jpg 708w,
-												./img/portfolio-cards/img_L-6-740.jpg 740w,
-												./img/portfolio-cards/img_s-6-900.jpg 900w
-											"
-											sizes="(min-width:1200px)  370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-											src="./img/portfolio-cards/img_s-6-450.jpg"
-											alt="Відкрита книга з надписом I am limited edition, і зображенням двох вівчар які стоять спиною. "
-										/>
+										<picture>
+											<!-- desktop screen -->
+											<source
+												media="(min-width: 1200px)"
+												srcset="./img/portfolio-cards/img_L-6-370.jpg 1x, ./img/portfolio-cards/img_L-6-740.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- tablet screen -->
+											<source
+												media="(min-width: 768px)"
+												srcset="./img/portfolio-cards/img_m-6-354.jpg 1x, ./img/portfolio-cards/img_m-6-708.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- mobile screen -->
+											<source
+												media="(max-width: 767px)"
+												srcset="./img/portfolio-cards/img_s-6-450.jpg 1x, ./img/portfolio-cards/img_s-6-900.jpg 2x"
+												type="image/jpg"
+											/>
+											<img
+												class="portfolio__img"
+												src="./img/portfolio-cards/img_s-6-450.jpg"
+												alt="Відкрита книга з надписом I am limited edition, і зображенням двох вівчар які стоять спиною. "
+											/>
+										</picture>
 
 										<div class="overlay">
 											<p class="overlay__desc">
@@ -339,21 +415,31 @@
 							<div class="portfolio__cards">
 								<a href="" class="portfolio__link link">
 									<div class="portfolio__thumb">
-										<img
-											class="portfolio__img"
-											srcset="
-												./img/portfolio-cards/img_L-7-370.jpg 370w,
-												./img/portfolio-cards/img_m-7-354.jpg 354w,
-												./img/portfolio-cards/img_s-7-450.jpg 450w,
-												./img/portfolio-cards/img_m-7-708.jpg 708w,
-												./img/portfolio-cards/img_L-7-740.jpg 740w,
-												./img/portfolio-cards/img_s-7-900.jpg 900w
-											"
-											sizes="(min-width:1200px)  370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-											src="./img/portfolio-cards/img_s-7-450.jpg"
-											alt="Біла прямокутна етікетна товару на мотузку  з надписом lab el tag. "
-										/>
-
+										<picture>
+											<!-- desktop screen -->
+											<source
+												media="(min-width: 1200px)"
+												srcset="./img/portfolio-cards/img_L-7-370.jpg 1x, ./img/portfolio-cards/img_L-7-740.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- tablet screen -->
+											<source
+												media="(min-width: 768px)"
+												srcset="./img/portfolio-cards/img_m-7-354.jpg 1x, ./img/portfolio-cards/img_m-7-708.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- mobile screen -->
+											<source
+												media="(max-width: 767px)"
+												srcset="./img/portfolio-cards/img_s-7-450.jpg 1x, ./img/portfolio-cards/img_s-7-900.jpg 2x"
+												type="image/jpg"
+											/>
+											<img
+												class="portfolio__img"
+												src="./img/portfolio-cards/img_s-7-450.jpg"
+												alt="Біла прямокутна етікетна товару на мотузку  з надписом lab el tag. "
+											/>
+										</picture>
 										<div class="overlay">
 											<p class="overlay__desc">
 												Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -375,20 +461,31 @@
 							<div class="portfolio__cards">
 								<a href="" class="portfolio__link link">
 									<div class="portfolio__thumb">
-										<img
-											class="portfolio__img"
-											srcset="
-												./img/portfolio-cards/img_L-8-370.jpg 370w,
-												./img/portfolio-cards/img_m-8-354.jpg 354w,
-												./img/portfolio-cards/img_s-8-450.jpg 450w,
-												./img/portfolio-cards/img_m-8-708.jpg 708w,
-												./img/portfolio-cards/img_L-8-740.jpg 740w,
-												./img/portfolio-cards/img_s-8-900.jpg 900w
-											"
-											sizes="(min-width:1200px)  370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-											src="./img/portfolio-cards/img_s-8-450.jpg"
-											alt="Руки на клавіатурі відкритого лап топу на якому відкрита интернет сторінка Growing business"
-										/>
+										<picture>
+											<!-- desktop screen -->
+											<source
+												media="(min-width: 1200px)"
+												srcset="./img/portfolio-cards/img_L-8-370.jpg 1x, ./img/portfolio-cards/img_L-8-740.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- tablet screen -->
+											<source
+												media="(min-width: 768px)"
+												srcset="./img/portfolio-cards/img_m-8-354.jpg 1x, ./img/portfolio-cards/img_m-8-708.jpg 2x"
+												type="image/jpg"
+											/>
+											<!-- mobile screen -->
+											<source
+												media="(max-width: 767px)"
+												srcset="./img/portfolio-cards/img_s-8-450.jpg 1x, ./img/portfolio-cards/img_s-8-900.jpg 2x"
+												type="image/jpg"
+											/>
+											<img
+												class="portfolio__img"
+												src="./img/portfolio-cards/img_s-8-450.jpg"
+												alt="Руки на клавіатурі відкритого лап топу на якому відкрита интернет сторінка Growing business"
+											/>
+										</picture>
 
 										<div class="overlay">
 											<p class="overlay__desc">
