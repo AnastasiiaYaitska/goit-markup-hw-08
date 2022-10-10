@@ -16,7 +16,7 @@
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			integrity="sha512-wpPYaUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
@@ -59,18 +59,12 @@
 						</a>
 					</li>
 				</ul>
-				<div class="burger-menu">
-					<button
-						class="burger-menu__btn menu--toggle js-open-menu"
-						type="button"
-						aria-expanded="false"
-						aria-controls="mobile-menu"
-					>
-						<svg class="burger-menu__icon" width="40" height="40">
-							<use href="./img/icons.svg/symbol-defs.svg#menu-open"></use>
-						</svg>
-					</button>
-				</div>
+
+				<button class="burger-menu__btn menu--toggle js-open-menu" type="button" aria-expanded="false">
+					<svg class="burger-menu__icon" width="40" height="40">
+						<use href="./img/icons.svg/symbol-defs.svg#menu-open"></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 
@@ -632,10 +626,7 @@
 		<footer class="footer">
 			<div class="footer-container container">
 				<div class="footer-aside">
-					<a class="footer-logo link" href="/">
-						<span class="logo-web">Web</span>
-						Studio
-					</a>
+					<a class="footer-logo link" href="/"> <span class="logo-web">Web</span>Studio </a>
 					<address class="address">
 						<ul class="address-footer list">
 							<li class="address-item">
@@ -716,7 +707,7 @@
 				</div>
 				<div class="follow">
 					<form class="follow-form" name="follow-form">
-						<strong class="follow-dsc">Підпишіться на розсилку</strong>
+						<strong class="follow-dsc footer-titel">Підпишіться на розсилку</strong>
 						<div class="follow-wrapper">
 							<label class="follow-label">
 								<input class="follow-input" type="email" name="email" placeholder="E-mail" required />
@@ -785,13 +776,13 @@
 		</div>
 		<div class="menu-container js-menu-container">
 			<button class="menu-container__btn menu--toggle js-close-menu">
-				<svg class="menu-container__icon" width="40" heigth="40">
+				<svg class="menu-container__icon" width="40" height="40">
 					<use href="./img/icons.svg/symbol-defs.svg#menu-close"></use>
 				</svg>
 			</button>
 			<ul class="menu-pagination list">
 				<li class="menu-pagination__item">
-					<a class="menu-pagination__link link" href="./index.html">Студія</a>
+					<a class="menu-pagination__link active link" href="./index.html">Студія</a>
 				</li>
 				<li class="menu-pagination__item">
 					<a class="menu-pagination__link link" href="./portfolio.html">Портфоліо</a>
